@@ -48,7 +48,7 @@ button{cursor:pointer}
 .hero-copy{position:relative;z-index:2;max-width:430px}
 .hero-art{position:absolute;right:25px;top:18px;width:44%;height:150px;border-radius:10px;background:linear-gradient(160deg,var(--art1),var(--art2) 46%,var(--art3));opacity:.85}
 .hero-art:before{content:"";position:absolute;left:0;right:0;bottom:0;height:45%;background:linear-gradient(180deg,transparent,var(--primary))}
-.hero-art:after{content:"✦ つなぐ\\A     ひろげる\\A         学びの輪。";white-space:pre;position:absolute;right:25px;top:30px;color:white;font-weight:700;font-size:18px;line-height:1.35;text-shadow:0 1px 5px #56859b}
+.hero-art:after{content:"✦ つなぐ　ひろげる 学びの輪　✦";white-space:pre;position:absolute;right:25px;top:30px;color:white;font-weight:700;font-size:18px;line-height:1.35;text-shadow:0 1px 5px #56859b}
 .quick{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:16px 0 22px}
 .quick-card{border:1px solid var(--border);background:var(--surface);border-radius:12px;padding:19px 14px;box-shadow:var(--shadow);text-align:center}
 .qicon{width:37px;height:37px;border:2px solid var(--primary);border-radius:50%;display:grid;place-items:center;margin:0 auto 10px;color:#2686b5;font-size:18px}
@@ -75,6 +75,18 @@ textarea{min-height:170px;resize:vertical}
 .course{display:grid;grid-template-columns:100px 1fr auto;gap:14px;align-items:center}.course-img{height:75px;border-radius:8px;background:linear-gradient(135deg,#c9b394,#eee1cc);display:grid;place-items:center;font-size:26px}
 .progress{height:6px;background:var(--border);border-radius:99px;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;width:40%;background:var(--primary)}
 .learning-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:15px}.learn-card{border:1px solid var(--border);border-radius:10px;padding:16px}.learn-card .li{font-size:22px;margin-bottom:10px}.learn-card b{font-size:12px}.learn-card p{font-size:10px;color:var(--muted);line-height:1.6}
+.media-add-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}
+.media-add{border:1px solid var(--border);background:var(--surface);border-radius:9px;padding:14px 8px;text-align:center;display:grid;gap:5px;cursor:pointer;transition:.15s}
+.media-add:hover{border-color:var(--primary);background:var(--primary2)}
+.media-add input{display:none}.media-icon{font-size:23px;color:var(--primary)}
+.media-add b{font-size:11px}.media-add small{font-size:8px;color:var(--muted)}
+.attachment-preview{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.attachment-item{position:relative;display:flex;align-items:center;gap:7px;border:1px solid var(--border);background:var(--surface2);border-radius:8px;padding:7px 28px 7px 8px;font-size:10px;max-width:100%}
+.attachment-item img{width:38px;height:38px;object-fit:cover;border-radius:5px}
+.attachment-item .remove-file{position:absolute;right:6px;top:5px;border:0;background:transparent;color:var(--muted);font-size:14px}
+.group-icon-picker{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:15px}
+.group-icon{width:40px;height:40px;border:1px solid var(--border);background:var(--surface);border-radius:10px;font-size:19px}
+.group-icon:hover,.group-icon.active{border-color:var(--primary);background:var(--primary2);box-shadow:0 0 0 2px var(--primary2)}
 .theme-box{display:flex;gap:8px;flex-wrap:wrap}.theme-dot{width:31px;height:31px;border-radius:8px;border:1px solid #cfdde3}.theme-dot.active{outline:3px solid var(--primary2);outline-offset:1px}
 .toast{position:fixed;right:24px;bottom:24px;background:#20343e;color:#fff;padding:11px 16px;border-radius:9px;font-size:11px;display:none;z-index:50}
 .mobile-colors{display:none}
@@ -83,7 +95,7 @@ textarea{min-height:170px;resize:vertical}
 @media(max-width:650px){
 .mobile-colors{display:flex;position:fixed;right:10px;bottom:62px;background:var(--surface);border:1px solid var(--border);border-radius:12px;padding:6px;gap:5px;z-index:35;box-shadow:var(--shadow)}
 .mobile-colors .theme-dot{width:25px;height:25px}
-.sidebar{display:none}.main{margin:0;padding:14px 14px 78px}.topbar{height:35px}.hero{min-height:220px;padding:23px}.hero-art{left:15px;right:15px;bottom:12px;top:auto;width:auto;height:85px}.hero:after{display:none}.quick{gap:9px}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);z-index:30}.mobile-nav button{flex:1;border:0;background:transparent;padding:10px 2px;font-size:9px;color:var(--text)}.form-row{grid-template-columns:1fr}.course{grid-template-columns:75px 1fr}.course .btn{grid-column:2}.learning-grid{grid-template-columns:1fr}.chat-window{height:470px}}
+.sidebar{display:none}.main{margin:0;padding:14px 14px 78px}.topbar{height:35px}.hero{min-height:220px;padding:23px}.hero-art{left:15px;right:15px;bottom:12px;top:auto;width:auto;height:85px}.hero:after{display:none}.quick{gap:9px}.mobile-nav{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--surface);border-top:1px solid var(--border);z-index:30}.mobile-nav button{flex:1;border:0;background:transparent;padding:10px 2px;font-size:9px;color:var(--text)}.form-row{grid-template-columns:1fr}.media-add-grid{grid-template-columns:repeat(2,1fr)}.course{grid-template-columns:75px 1fr}.course .btn{grid-column:2}.learning-grid{grid-template-columns:1fr}.chat-window{height:470px}}
 </style>
 </head>
 <body>
@@ -135,7 +147,18 @@ textarea{min-height:170px;resize:vertical}
 
 <section id="input" class="page">
  <div class="page-head"><h1>知識をいれる</h1><p>あなたの知識・技術・経験を、みんなと共有しましょう。</p></div>
- <div class="card"><div class="form-grid"><div><label>タイトル *</label><input id="ktitle" placeholder="例：味噌の作り方"></div><div><label>内容 *</label><textarea id="kcontent" placeholder="ここに内容を入力してください…"></textarea></div><div><label>タグ</label><input id="ktags" placeholder="例：料理、地域、技術"></div><div class="form-row"><div><label>グループ</label><select id="kgroup"><option>学校（公開）</option><option>ものづくり（非公開）</option><option>地域（公開）</option></select></div><div><label>公開範囲</label><select id="kvisibility"><option value="public">グループ内に公開</option><option value="private">自分のみ</option></select></div></div><div><button class="btn" onclick="saveKnowledge()">登録する</button></div></div></div>
+ <div class="card"><div class="form-grid"><div><label>タイトル *</label><input id="ktitle" placeholder="例：味噌の作り方"></div><div><label>内容 *</label><textarea id="kcontent" placeholder="ここに内容を入力してください…"></textarea></div><div><label>タグ</label><input id="ktags" placeholder="例：料理、地域、技術"></div>
+<div>
+ <label>メディアを追加</label>
+ <div class="media-add-grid">
+  <label class="media-add"><input id="photoInput" type="file" accept="image/*" multiple onchange="handleFiles(this,'写真')"><span class="media-icon">▧</span><b>写真</b><small>画像を追加</small></label>
+  <label class="media-add"><input id="videoInput" type="file" accept="video/*" multiple onchange="handleFiles(this,'動画')"><span class="media-icon">▶</span><b>動画</b><small>動画を追加</small></label>
+  <label class="media-add"><input id="audioInput" type="file" accept="audio/*" multiple onchange="handleFiles(this,'音声')"><span class="media-icon">♩</span><b>音声</b><small>音声を追加</small></label>
+  <label class="media-add"><input id="fileInput" type="file" multiple onchange="handleFiles(this,'ファイル')"><span class="media-icon">□</span><b>ファイル</b><small>PDF・資料など</small></label>
+ </div>
+ <div id="attachmentPreview" class="attachment-preview"></div>
+</div>
+<div class="form-row"><div><label>グループ</label><select id="kgroup"><option>学校（公開）</option><option>ものづくり（非公開）</option><option>地域（公開）</option></select></div><div><label>公開範囲</label><select id="kvisibility"><option value="public">グループ内に公開</option><option value="private">自分のみ</option></select></div></div><div><button class="btn" onclick="saveKnowledge()">登録する</button></div></div></div>
 </section>
 
 <section id="search" class="page">
@@ -159,7 +182,22 @@ textarea{min-height:170px;resize:vertical}
 
 <section id="groups" class="page">
  <div class="page-head"><h1>グループを探す</h1><p>公開グループを見つけたり、自分でグループを作成できます。</p></div>
- <div class="card"><div class="form-row"><div><label>グループ名</label><input id="gname" placeholder="例：地域の歴史研究"></div><div><label>公開設定</label><select id="gvisibility"><option value="public">公開グループ</option><option value="private">非公開グループ</option></select></div></div><label style="margin-top:15px">説明</label><textarea id="gdesc" style="min-height:100px" placeholder="どんなグループですか？"></textarea><button class="btn" onclick="createGroup()">グループを作成</button></div>
+ <div class="card"><div>
+ <label>グループアイコン</label>
+ <div class="group-icon-picker" id="groupIconPicker">
+  <button type="button" class="group-icon active" data-icon="⌂" onclick="chooseGroupIcon(this)">⌂</button>
+  <button type="button" class="group-icon" data-icon="📚" onclick="chooseGroupIcon(this)">📚</button>
+  <button type="button" class="group-icon" data-icon="🔧" onclick="chooseGroupIcon(this)">🔧</button>
+  <button type="button" class="group-icon" data-icon="🌱" onclick="chooseGroupIcon(this)">🌱</button>
+  <button type="button" class="group-icon" data-icon="🎨" onclick="chooseGroupIcon(this)">🎨</button>
+  <button type="button" class="group-icon" data-icon="🔬" onclick="chooseGroupIcon(this)">🔬</button>
+  <button type="button" class="group-icon" data-icon="💡" onclick="chooseGroupIcon(this)">💡</button>
+  <button type="button" class="group-icon" data-icon="⭐" onclick="chooseGroupIcon(this)">⭐</button>
+  <button type="button" class="group-icon" data-icon="🌏" onclick="chooseGroupIcon(this)">🌏</button>
+  <button type="button" class="group-icon" data-icon="🎓" onclick="chooseGroupIcon(this)">🎓</button>
+ </div>
+</div>
+<div class="form-row"><div><label>グループ名</label><input id="gname" placeholder="例：地域の歴史研究"></div><div><label>公開設定</label><select id="gvisibility"><option value="public">公開グループ</option><option value="private">非公開グループ</option></select></div></div><label style="margin-top:15px">説明</label><textarea id="gdesc" style="min-height:100px" placeholder="どんなグループですか？"></textarea><button class="btn" onclick="createGroup()">グループを作成</button></div>
  <div class="two" style="margin-top:15px"><div class="card"><h2 style="font-size:14px">公開グループ</h2><div id="groupList"></div></div><div class="card"><h2 style="font-size:14px">デザイン</h2><p style="font-size:10px;color:var(--muted)">好きな色に変更できます。</p><div class="theme-box"><button class="theme-dot" style="background:#fff" onclick="setTheme('white')" title="白"></button><button class="theme-dot" style="background:#202a31" onclick="setTheme('black')" title="黒"></button><button class="theme-dot" style="background:#9edff2" onclick="setTheme('blue')" title="水色"></button><button class="theme-dot" style="background:#f3b0c9" onclick="setTheme('pink')" title="ピンク"></button><button class="theme-dot" style="background:#b9dd7a" onclick="setTheme('green')" title="黄緑"></button><button class="theme-dot" style="background:#f7dc73" onclick="setTheme('yellow')" title="黄色"></button></div></div></div>
 </section>
 </main>
@@ -177,6 +215,8 @@ textarea{min-height:170px;resize:vertical}
 <script>
 const STORE='knowledge_connect_v3';
 let data=JSON.parse(localStorage.getItem(STORE)||'{"knowledge":[],"groups":[],"chat":[]}');
+let pendingAttachments=[];
+let selectedGroupIcon='⌂';
 const themes={
 white:{
  bg:'#f7fbfd',surface:'#ffffff',surface2:'#f2f8fb',text:'#20384a',muted:'#718492',
@@ -219,16 +259,64 @@ function persist(){localStorage.setItem(STORE,JSON.stringify(data))}
 function toast(t){let e=document.getElementById('toast');e.textContent=t;e.style.display='block';clearTimeout(window.tt);window.tt=setTimeout(()=>e.style.display='none',1700)}
 function showPage(id,btn){document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));document.getElementById(id).classList.add('active');document.querySelectorAll('.nav button').forEach(b=>b.classList.remove('active'));if(btn)btn.classList.add('active');if(id==='search')searchKnowledge();if(id==='chat')renderChat();if(id==='groups')renderGroups();window.scrollTo({top:0,behavior:'smooth'})}
 function esc(s){return String(s).replace(/[&<>"']/g,m=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[m]))}
-function saveKnowledge(){let t=ktitle.value.trim(),c=kcontent.value.trim();if(!t||!c){toast('タイトルと内容を入力してください');return}data.knowledge.unshift({title:t,content:c,tags:ktags.value,group:kgroup.value,visibility:kvisibility.value,date:new Date().toLocaleDateString('ja-JP')});persist();ktitle.value='';kcontent.value='';ktags.value='';renderRecent();toast('知識を登録しました')}
-function searchKnowledge(){let q=(searchBox.value||'').toLowerCase(),a=data.knowledge.filter(x=>(x.title+x.content+x.tags).toLowerCase().includes(q));results.innerHTML=a.length?a.map(x=>`<div class="result"><h3>${esc(x.title)}</h3><p>${esc(x.content)}</p><span class="tag">${esc(x.tags||'知識')}</span><span class="tag">${esc(x.group||'公開')}</span></div>`).join(''):'<p style="font-size:11px;color:var(--muted)">まだ知識がありません。</p>'}
+function saveKnowledge(){
+ let t=ktitle.value.trim(),c=kcontent.value.trim();
+ if(!t||!c){toast('タイトルと内容を入力してください');return}
+ data.knowledge.unshift({
+   title:t,content:c,tags:ktags.value,group:kgroup.value,visibility:kvisibility.value,
+   attachments:pendingAttachments.map(x=>({name:x.name,type:x.type,size:x.size,kind:x.kind,data:x.data})),
+   date:new Date().toLocaleDateString('ja-JP')
+ });
+ try{persist()}catch(e){toast('ファイルが大きすぎます。小さいファイルで試してください');return}
+ ktitle.value='';kcontent.value='';ktags.value='';
+ document.querySelectorAll('#input input[type=file]').forEach(x=>x.value='');
+ pendingAttachments=[];renderAttachments();renderRecent();toast('知識を登録しました')
+}
+function handleFiles(input,kind){
+ const files=[...input.files];
+ files.forEach(file=>{
+   const reader=new FileReader();
+   reader.onload=()=>{
+     pendingAttachments.push({name:file.name,type:file.type,size:file.size,kind,data:reader.result});
+     renderAttachments();
+   };
+   reader.readAsDataURL(file);
+ });
+ input.value='';
+}
+function renderAttachments(){
+ const box=document.getElementById('attachmentPreview');
+ if(!box)return;
+ box.innerHTML=pendingAttachments.length?pendingAttachments.map((x,i)=>{
+   const visual=x.kind==='写真'?`<img src="${x.data}" alt="">`:`<span class="media-icon">${x.kind==='動画'?'▶':x.kind==='音声'?'♩':'□'}</span>`;
+   return `<div class="attachment-item">${visual}<span>${esc(x.name)}</span><button class="remove-file" onclick="removeAttachment(${i})">×</button></div>`;
+ }).join(''):'';
+}
+function removeAttachment(i){pendingAttachments.splice(i,1);renderAttachments()}
+function searchKnowledge(){let q=(searchBox.value||'').toLowerCase(),a=data.knowledge.filter(x=>(x.title+x.content+x.tags).toLowerCase().includes(q));results.innerHTML=a.length?a.map(x=>`<div class="result"><h3>${esc(x.title)}</h3><p>${esc(x.content)}</p><span class="tag">${esc(x.tags||'知識')}</span><span class="tag">${esc(x.group||'公開')}</span>${(x.attachments||[]).map(a=>`<span class="tag">${esc(a.kind)}</span>`).join('')}</div>`).join(''):'<p style="font-size:11px;color:var(--muted)">まだ知識がありません。</p>'}
 function quickSearch(q){searchBox.value=q;searchKnowledge()}
-function renderRecent(){let a=data.knowledge.slice(0,4);recent.innerHTML=a.length?a.map((x,i)=>`<div class="post"><div class="thumb">${['⌂','▣','♧','✦'][i%4]}</div><div><b>${esc(x.title)}</b><small>${esc(x.group||'学校')}　・ ${esc(x.date)}</small></div></div>`).join(''):'<div class="post"><div class="thumb">✦</div><div><b>ここに最近の投稿が表示されます</b><small>知識を登録してみましょう</small></div></div>'}
+function renderRecent(){let a=data.knowledge.slice(0,4);recent.innerHTML=a.length?a.map((x,i)=>`<div class="post"><div class="thumb">${['⌂','▣','♧','✦'][i%4]}</div><div><b>${esc(x.title)}</b><small>${esc(x.group||'学校')}　・ ${esc(x.date)} ${(x.attachments||[]).length?`・ 📎 ${(x.attachments||[]).length}件`:''}</small></div></div>`).join(''):'<div class="post"><div class="thumb">✦</div><div><b>ここに最近の投稿が表示されます</b><small>知識を登録してみましょう</small></div></div>'}
 let currentGroup='学校';
 function setGroup(g){currentGroup=g;chatTitle.textContent=g+'（'+(g==='ものづくり'?'非公開':'公開')+'）';showPage('chat');renderChat()}
 function renderChat(){let a=data.chat.filter(x=>x.group===currentGroup);messages.innerHTML=a.length?a.map(x=>`<div class="bubble ${x.me?'me':''}">${esc(x.text)}</div>`).join(''):'<div class="bubble">こんにちは！ここで知識を共有しましょう。</div>';messages.scrollTop=messages.scrollHeight}
 function sendChat(){let v=chatInput.value.trim();if(!v)return;data.chat.push({group:currentGroup,text:v,me:true});persist();chatInput.value='';renderChat()}
-function createGroup(){let n=gname.value.trim();if(!n){toast('グループ名を入力してください');return}data.groups.unshift({name:n,desc:gdesc.value,visibility:gvisibility.value});persist();gname.value='';gdesc.value='';renderGroups();toast('グループを作成しました')}
-function renderGroups(){let base=[{name:'学校',desc:'学校で学んだ知識を共有',visibility:'public'},{name:'地域',desc:'地域の歴史や文化',visibility:'public'},...data.groups.filter(g=>g.visibility==='public')];groupList.innerHTML=base.map(g=>`<div class="post"><div class="thumb">♧</div><div><b>${esc(g.name)} <span class="tag">公開</span></b><small>${esc(g.desc||'')}</small></div></div>`).join('')}
+function chooseGroupIcon(btn){
+ selectedGroupIcon=btn.dataset.icon;
+ document.querySelectorAll('.group-icon').forEach(b=>b.classList.remove('active'));
+ btn.classList.add('active');
+}
+function createGroup(){
+ let n=gname.value.trim();
+ if(!n){toast('グループ名を入力してください');return}
+ data.groups.unshift({name:n,desc:gdesc.value,visibility:gvisibility.value,icon:selectedGroupIcon});
+ persist();gname.value='';gdesc.value='';selectedGroupIcon='⌂';
+ document.querySelectorAll('.group-icon').forEach((b,i)=>b.classList.toggle('active',i===0));
+ renderGroups();toast('グループを作成しました')
+}
+function renderGroups(){
+ let base=[{name:'学校',desc:'学校で学んだ知識を共有',visibility:'public',icon:'🎓'},{name:'地域',desc:'地域の歴史や文化',visibility:'public',icon:'🌏'},...data.groups.filter(g=>g.visibility==='public')];
+ groupList.innerHTML=base.map(g=>`<div class="post"><div class="thumb">${esc(g.icon||'⌂')}</div><div><b>${esc(g.name)} <span class="tag">公開</span></b><small>${esc(g.desc||'')}</small></div></div>`).join('')
+}
 function setTheme(t){
   const v=themes[t];
   if(!v)return;
@@ -237,7 +325,7 @@ function setTheme(t){
   localStorage.setItem('kc_theme',t);
   document.querySelectorAll('.theme-dot').forEach(b=>b.classList.toggle('active',b.dataset.theme===t));
 }
-setTheme(localStorage.getItem('kc_theme')||'blue');renderRecent();renderGroups();searchKnowledge();renderChat();
+setTheme(localStorage.getItem('kc_theme')||'blue');renderRecent();renderGroups();searchKnowledge();renderChat();renderAttachments();
 </script>
 </body>
 </html>
