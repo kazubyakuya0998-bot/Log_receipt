@@ -104,10 +104,10 @@ textarea{min-height:170px;resize:vertical}
  <div class="brand"><div class="brand-mark">✦</div><div class="brand-text">KNOWLEDGE<br>CONNECT</div></div>
  <nav class="nav">
   <button class="active" onclick="showPage('home',this)">⌂　HOME</button>
-  <button onclick="showPage('input',this)">⊕　知識をいれる</button>
-  <button onclick="showPage('search',this)">⌕　知識を取り出す</button>
-  <button onclick="showPage('chat',this)">◌　グループチャット</button>
-  <button onclick="showPage('learn',this)">▣　学習・学び</button>
+  <button onclick="showPage('input',this)">📝　知識をいれる</button>
+  <button onclick="showPage('search',this)">📖　知識を取り出す</button>
+  <button onclick="showPage('chat',this)">✉️　グループチャット</button>
+  <button onclick="showPage('learn',this)">📚　学習・学び</button>
  </nav>
 
  <div class="side-line"></div>
@@ -123,12 +123,12 @@ textarea{min-height:170px;resize:vertical}
 
  <div class="side-label">所属グループ</div>
  <div class="group-mini">
-  <button onclick="setGroup('学校')">⌂　学校（公開）</button>
-  <button onclick="setGroup('ものづくり')">◉　ものづくり（非公開）</button>
-  <button onclick="setGroup('地域')">♙　地域（公開）</button>
-  <button onclick="showPage('groups')">⊕　グループを探す</button>
+  <button onclick="setGroup('学校')">🎓　学校（公開）</button>
+  <button onclick="setGroup('ものづくり')">🔧　ものづくり（非公開）</button>
+  <button onclick="setGroup('地域')">🗂️　地域（公開）</button>
+  <button onclick="showPage('groups')">🔎　グループを探す</button>
  </div>
- <div class="bottom-side"><button class="settings">⚙　設定</button><div class="user">◉　和樹</div></div>
+ <div class="bottom-side"><button class="settings">⚙️　設定</button><div class="user">　和樹</div></div>
 </aside>
 
 <main class="main">
@@ -137,10 +137,10 @@ textarea{min-height:170px;resize:vertical}
 <section id="home" class="page active">
  <div class="hero"><div class="hero-copy"><h1>こんにちは、ようこそ</h1><p>今日も、誰かの知識が、誰かの力になります。</p></div><div class="hero-art"></div></div>
  <div class="quick">
-  <div class="quick-card" onclick="showPage('input')"><div class="qicon">＋</div><b>知識をいれる</b><p>あなたの知識や技術を<br>記録できます。</p></div>
-  <div class="quick-card" onclick="showPage('search')"><div class="qicon">⌕</div><b>知識を取り出す</b><p>キーワードで検索して、<br>AIに質問できます。</p></div>
-  <div class="quick-card" onclick="showPage('chat')"><div class="qicon">•••</div><b>グループチャット</b><p>グループのメンバーと<br>情報を共有できます。</p></div>
-  <div class="quick-card" onclick="showPage('learn')"><div class="qicon">▣</div><b>学習・学び</b><p>知識をもとに教材や<br>クイズで学べます。</p></div>
+  <div class="quick-card" onclick="showPage('input')"><div class="qicon">📝</div><b>知識をいれる</b><p>あなたの知識や技術を<br>記録できます。</p></div>
+  <div class="quick-card" onclick="showPage('search')"><div class="qicon">📖</div><b>知識を取り出す</b><p>キーワードで検索して、<br>AIに質問できます。</p></div>
+  <div class="quick-card" onclick="showPage('chat')"><div class="qicon">✉️</div><b>グループチャット</b><p>グループのメンバーと<br>情報を共有できます。</p></div>
+  <div class="quick-card" onclick="showPage('learn')"><div class="qicon">📚</div><b>学習・学び</b><p>知識をもとに教材や<br>クイズで学べます。</p></div>
  </div>
  <div class="columns"><div class="card"><div class="card-title"><h2>最近の投稿</h2><span class="more">もっと見る ›</span></div><div id="recent"></div></div><div class="card"><div class="card-title"><h2>あなたのグループ</h2></div><div class="post"><div class="thumb">⌂</div><div><b>学校</b><small>12人　公開</small></div></div><div class="post"><div class="thumb">◉</div><div><b>ものづくり</b><small>8人　非公開</small></div></div><div class="post"><div class="thumb">♙</div><div><b>地域</b><small>15人　公開</small></div></div></div></div>
 </section>
@@ -169,7 +169,7 @@ textarea{min-height:170px;resize:vertical}
 
 <section id="chat" class="page">
  <div class="page-head"><h1>グループチャット</h1><p>グループのメンバーと知識を共有しましょう。</p></div>
- <div class="chat-layout"><div class="card chat-list"><button class="chat-group active" onclick="setGroup('学校')">⌂　学校（公開）<small>12人</small></button><button class="chat-group" onclick="setGroup('ものづくり')">◉　ものづくり（非公開）<small>8人</small></button><button class="chat-group" onclick="setGroup('地域')">♙　地域（公開）<small>15人</small></button></div>
+ <div class="chat-layout"><div class="card chat-list"><button class="chat-group active" onclick="setGroup('学校')">🎓　学校（公開）<small>12人</small></button><button class="chat-group" onclick="setGroup('ものづくり')">🔧　ものづくり（非公開）<small>8人</small></button><button class="chat-group" onclick="setGroup('地域')">🗂️　地域（公開）<small>15人</small></button></div>
  <div class="card chat-window"><div class="card-title"><h2 id="chatTitle">学校（公開）</h2><span>☰</span></div><div id="messages" class="messages"></div><div class="chat-input"><input id="chatInput" placeholder="メッセージを入力…"><button class="btn" onclick="sendChat()">➤</button></div></div></div>
 </section>
 
